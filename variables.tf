@@ -14,7 +14,7 @@ variable "databricks" {
     name                     = string
     sku                      = string
     storage_account_sku_name = string
-    managed_resource_group_name = string
+    
 
   })
 
@@ -22,7 +22,6 @@ variable "databricks" {
     name                     = "lens-databricks"
     sku                      = "premium"
     storage_account_sku_name = "Standard-GRS"
-    managed_resource_group_name = "lens-databricks-managed-resource-group-name"
   }
   validation {
     condition     = (
