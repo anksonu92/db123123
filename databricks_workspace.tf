@@ -3,7 +3,7 @@ resource "azurerm_databricks_workspace" "main" {
   resource_group_name = var.resource_group_name
   location            = var.location
   sku                 = var.databricks.sku
-  managed_resource_group_name = var.databricks.managed_resource_group_name
+  
 
   tags                = var.tags
 
